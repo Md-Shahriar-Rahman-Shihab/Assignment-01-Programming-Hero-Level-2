@@ -1,4 +1,3 @@
-// Problem 1 - Solution
 function formatValue(value: string | number | boolean): string | number | boolean {
   let result: string | number | boolean;
 
@@ -15,7 +14,7 @@ function formatValue(value: string | number | boolean): string | number | boolea
   return result;
 }
 
-//Problem 2 - Solution
+
 function getLength(value: string | any[]): number {
   let length: number;
   
@@ -32,7 +31,7 @@ function getLength(value: string | any[]): number {
   return length;
 }
 
-// Problem 3 - Solution
+
 class Person {
   name: string;
   age: number;
@@ -47,7 +46,7 @@ class Person {
   }
 }
 
-// Problem 4 - Solution
+
 function filterByRating(
   items: { title: string; rating: number }[]
 ): { title: string; rating: number }[] {
@@ -63,7 +62,7 @@ function filterByRating(
   return result;
 }
 
-// Problem 5 - Solution
+
 function filterActiveUsers(
   users: { id: number; name: string; email: string; isActive: boolean }[]
 ): { id: number; name: string; email: string; isActive: boolean }[] {
@@ -79,7 +78,7 @@ function filterActiveUsers(
   return output;
 }
 
-//Problem 6 - Solution
+
 interface Book {
   title: string;
   author: string;
@@ -95,7 +94,7 @@ function printBookDetails(book: Book): void {
   );
 }
 
-//Problem 7 - Solution
+
 function getUniqueValues(
   arr1: (string | number)[],
   arr2: (string | number)[]
@@ -136,7 +135,7 @@ function getUniqueValues(
   return result;
 }
 
-//Problem 8 - Solution
+
 function calculateTotalPrice(
   products: { name: string; price: number; quantity: number; discount?: number }[]
 ): number {
