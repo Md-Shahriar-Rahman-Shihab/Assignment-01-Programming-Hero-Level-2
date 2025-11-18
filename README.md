@@ -107,8 +107,8 @@ function printValue(obj: User, key: keyof User) {
   console.log(obj[key]);
 }
 
-printValue({ name: "Shihab", age: 20 }, "name"); // ✔ Valid
-printValue({ name: "Shihab", age: 20 }, "email"); // ❌ Error (email নেই)
+printValue({ name: "Shihab", age: 20 }, "name"); //  Valid
+printValue({ name: "Shihab", age: 20 }, "email"); // Error (email নেই)
 
 এখানে keyof User ensure করে যে কেবলমাত্র valid key-ই ব্যবহার করা যাবে।
 Invalid key দিলে TypeScript সাথে সাথেই error দেখাবে।
@@ -120,7 +120,7 @@ Invalid key দিলে TypeScript সাথে সাথেই error দেখ
 
 const account = {
   username: "shihab",
-  email: "abc@gmail.com",
+  email: "shihab@gmail.com",
   role: "admin"
 };
 
