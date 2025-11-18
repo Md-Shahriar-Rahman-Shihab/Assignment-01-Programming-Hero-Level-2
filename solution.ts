@@ -96,39 +96,42 @@ function printBookDetails(book: Book): void {
 
 
 function getUniqueValues(
-  arr1: (string | number)[],
-  arr2: (string | number)[]
+  array1: (string | number)[],
+  array2: (string | number)[]
 ): (string | number)[] {
 
   const result: (string | number)[] = [];
+  let k = 0; 
 
-  for (let i = 0; i < arr1.length; i++) {
+  for (let i = 0; i < array1.length; i++) {
     let found = false;
 
-    for (let j = 0; j < result.length; j++) {
-      if (result[j] === arr1[i]) {
+    for (let j = 0; j < k; j++) {
+      if (result[j] === array1[i]) {
         found = true;
         break;
       }
     }
 
     if (!found) {
-      result.push(arr1[i]);
+      result[k] = array1[i];
+      k++;
     }
   }
 
-  for (let i = 0; i < arr2.length; i++) {
+  for (let i = 0; i < array2.length; i++) {
     let found = false;
 
-    for (let j = 0; j < result.length; j++) {
-      if (result[j] === arr2[i]) {
+    for (let j = 0; j < k; j++) {
+      if (result[j] === array2[i]) {
         found = true;
         break;
       }
     }
 
     if (!found) {
-      result.push(arr2[i]);
+      result[k] = array2[i]; 
+      k++;
     }
   }
 
